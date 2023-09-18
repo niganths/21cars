@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom - Niganth</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.card{
+  background-color: bisque;
+}
+.logo{
+    color: black;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ff1919;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -3px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.navbar{
+    background-color: whitesmoke;
+}
+    </style>
+</head>
+<body>
+
+  <section>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="logo">21'CARS</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="2023-Maruti-Swift-rendering.jpg" class="card-img-top" alt="Maruti Swift">
+                <div class="card-body">
+                    <h5 class="card-title">MODEL: SWIFT ZXI (2018)</h5>
+                    <p class="card-text">
+                        INSURANCE: NOT ACTIVE<br>
+                        KMS: 75,000<br>
+                        TYPE: DIESEL<br>
+                        PRICE: 3,45,000
+                    </p>
+                    <a href="booking.html" class="btn btn-primary">BOOK A DRIVE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="download.jpeg" class="card-img-top" alt="Baleno">
+                <div class="card-body">
+                    <h5 class="card-title">MODEL: BALENO ZXI (2020)</h5>
+                    <p class="card-text">
+                        INSURANCE: ACTIVE<br>
+                        KMS: 55,000<br>
+                        TYPE: DIESEL<br>
+                        PRICE: 4,45,000
+                    </p>
+                    <a href="booking.html" class="btn btn-primary">BOOK A DRIVE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images.jpeg" class="card-img-top" alt="I20">
+                <div class="card-body">
+                    <h5 class="card-title">MODEL: I20 ASTRA (2016)</h5>
+                    <p class="card-text">
+                        INSURANCE: NOT ACTIVE<br>
+                        KMS: 100,000<br>
+                        TYPE: PETROL<br>
+                        PRICE: 2,75,000
+                    </p>
+                    <a href="booking.html" class="btn btn-primary">BOOK A DRIVE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

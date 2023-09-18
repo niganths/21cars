@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom - Niganth</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+      .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: black;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ff1919;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -3px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.navbar{
+    background-color: whitesmoke;
+}
+
+    </style>
+</head>
+<body>
+
+  <section>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="logo">21'CARS</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="container contact-form">
+  <div class="contact-image">
+      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+  </div>
+  <form method="post" action="https://getform.io/f/97acb8c2-bda2-4281-84a2-c3b569af9c89">
+      <h3>Drop Us a Message</h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary">SEND</button>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+              </div>
+          </div>
+      </div>
+  </form>
+</div>
+
+
+</body>
+</html>

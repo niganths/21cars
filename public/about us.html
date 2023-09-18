@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom - Niganth</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about us.css">
+    <style>
+      .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: black;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ff1919;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -3px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.navbar{
+    background-color: whitesmoke;
+}
+p {
+      font-size: 18px; /* Default font size */
+      line-height: 1.5; /* Default line height */
+      margin-bottom: 20px; /* Default margin for spacing between paragraphs */
+    }
+
+    /* Add your CSS styles here for small screens (e.g., mobile devices) */
+    @media screen and (max-width: 768px) {
+      /* Example: Adjust font size or spacing for smaller screens */
+      p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Adjust line height for smaller screens */
+      }
+    }
+    
+    </style>
+</head>
+<body>
+
+  <section>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="logo">21'CARS</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="container"> <!-- Create a parent container -->
+    <div class="about">
+      <h2>ABOUT SGN CARS</h2>
+      <p id="orange">SGN CARS is a next-generation e-commerce platform for pre-owned cars. We provide the best experience for car buyers by offering a wide assortment of certified cars that are home delivered in a click of a button while sellers get the best price of their vehicles in less than 1 hour.</p>
+    </div>
+    <div class="destination">
+        <h2>The first-class destination for second-hand cars!</h2>
+        <p id="orange">SGN CARS is your single stop for buying or selling used cars, all over India. We've brought together cutting-edge technology with country-wide partners and more importantly, deep understanding of what buyers and sellers need. We solve all pain points associated with selling an existing car, or purchasing a pre-loved one. Whether you're buying or selling, you get a quick, easy, fair, transparent, hassle (and haggle) free process.</p>
+      </div>
+      <div class="hello">
+        <h2>Want to know about buying cars with us? </h2>
+        <p id="orange">If you're in the market for a pre-used car, the process can be daunting. Finding the car, talking to the owner, negotiating, examining its condition, wondering what you haven't been told, final purchase, RC Transfer, money transfer… phew, that's a lot for you to go through, especially in a market that's quite scattered. By visiting CARS24, we make this as simple as any other form of online shopping.<br>
+          Our large catalog of cars has every make and model you want, with a thorough vetting process ensuring full transparency in quality. With easy financing options, RC Transfer assistance, and a 6-month warranty on each car, we take all the uncertainty out of the purchase process. You focus on where you'll go when your newly purchased car comes home, we'll take care of the rest.</p>
+      </div>
+      <div class="hell">
+        <h2>More interested in selling your car with us?</h2>
+        <p id="orange">Traditionally, selling old cars is painful enough to make you stall the whole process. It takes 20-30 attempts to get the correct valuation, meet buyers face-to-face, negotiate each time, and then of course, wait several months for that RC Transfer. Do you really want to put yourself through that?
+    
+          Instead, log on to CARS24, describe your car, get a fair offer on it instantly, and sell it in less than an hour from your home or our branch. Our network of channel partners across the country bid for every car sold on our platform, ensuring a quick sale with a price that you will be happy with. We aim to bring down the car-selling process to a matter of a few hours, and let you sell your car from anywhere without even having to get off your couch.</p>
+      </div>
+  </div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
