@@ -1,4 +1,4 @@
-var databaseUrl = "mongodb://127.0.0.1:27017/mydb";
+var databaseUrl = "mongodb+srv://niganth21:niganth_2112@cluster0.pohepwd.mongodb.net/?retryWrites=true&w=majority";
 var mongojs = require("./node_modules/mongojs");
 var db = mongojs(databaseUrl);
 console.log("Connected to MongoDB");
